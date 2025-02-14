@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    //Incorrect way to get element by id.  Should be getElementById.
+    document.id("myDiv").innerHTML = "This text replaces the original."; 
+  </script>
+</body>
+</html>
